@@ -36,29 +36,3 @@ import java.util.Arrays;
         System.out.println("Merged array: " + Arrays.toString(X));
     }
 }
-
-#4.
- import java.util.HashMap;
-
- class DuplicateCharacters {
-    public static void main(String[] args) {
-        java.lang.String str = "Hello, world!";
-        HashMap<Character, Integer> charCountMap = new HashMap<>();
-        char[] chars = str.toCharArray();
-        for (char ch : chars) {
-            if (Character.isLetter(ch)) {
-                if (charCountMap.containsKey(ch)) {
-                    charCountMap.put(ch, charCountMap.get(ch) + 1);
-                } else {
-                    charCountMap.put(ch, 1);
-                }
-            }
-        }
-        System.out.println("Duplicate Characters:");
-        for (char ch : charCountMap.keySet()) {
-            if (charCountMap.get(ch) > 1) {
-                System.out.println(ch + ": " + charCountMap.get(ch));
-            }
-        }
-    }
-}
