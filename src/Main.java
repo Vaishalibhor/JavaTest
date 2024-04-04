@@ -37,28 +37,6 @@ import java.util.Arrays;
     }
 }
 
-#3.
- import java.util.HashMap;
-
- class WordCount {
-    public static void main(String[] args) {
-        java.lang.String str = "Hello world, this is a sample string.";
-        HashMap<String, Integer> wordCountMap = new HashMap<>();
-        String[] words = str.split("\\s+");
-        for (String word : words) {
-            if (wordCountMap.containsKey(word)) {
-                wordCountMap.put(word, wordCountMap.get(word) + 1);
-            } else {
-                wordCountMap.put(word, 1);
-            }
-        }
-        System.out.println("Word Count:");
-        for (String word : wordCountMap.keySet()) {
-            System.out.println(word + ": " + wordCountMap.get(word));
-        }
-    }
-}
-
 #4.
  import java.util.HashMap;
 
